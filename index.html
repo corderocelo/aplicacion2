@@ -1,0 +1,359 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Segunda Aplicacion</title>
+
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/temasapp2.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js" type="text/javascript"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onLoad="MM_preloadImages('imagenes/jesus.jpg')">
+<div data-role="page" id="Principal" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" 	   data-back-btn-theme="b">
+<h1><center>SEMANA SANTA EN MEXICO</center></h1>
+</div>
+<div data-role="main" class="ui-content">
+
+<center><img src="imagenes/yo.jpg" width="50%" height="50%"></center> 
+
+<ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>¿Qué es la semana Santa?</h2>
+<p>Muestra la definicion</p>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Religiones que celebran Semana Santa</h2>
+<p>Muestra todas las religiones que celebran la Semana Santa</p>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Semana Santa en Atlixco</h2>
+<p>Semana Santa em nuestro "Pueblo Magico"</p>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Semana Santa Estado de Puebla</h2>
+<p>Celebracion estado de Puebla </p>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Semana Santa Iztapalapa</h2>
+<p>Celebracion en Iztalapa</p>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina6" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Semana Santa San Luis Potosi</h2>
+<p>Celebracion en dicho estado</p>
+</a>
+</li>
+
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina7" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Semana Santa en Guerrero</h2>
+<p>Celebracion en dicho estado</p>
+</a>
+</li>
+
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina8" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Semana Santa en Oaxaca</h2>
+<p>Celebracion en dicho estado</p>
+</a>
+</li>
+
+</ul>
+</div>
+<div data-role="footer" align="center" data-theme="a">
+  <div>
+  <img src="imagenes/persona_azul.png" width="46" height="46">
+  </div>
+  <div>
+  <h4>Aplicacion Uno</h4>
+  <h4>Jose Angel Cordero Ocelo</h4>
+  </div>
+  </div>
+  </div>
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+  <h1>Definicion;</h1>
+ 
+  </div>
+  <div data-role="content" align="center">
+  <div>
+  <h2>Semana Santa Última semana de la cuaresma, desde el Domingo de Ramos hasta el Domingo de Resurrección, que la iglesia católica dedica a recordar la pasión, muerte y resurrección de Jesús.</h2>
+  </div>
+  <div>
+<img src="imagenes/semanasanta1.jpg" width="50%" height="50%"> </div>
+<div>
+<img src="imagenes/semanasanta2.jpg" width="50%" height="50%"> </div>
+  </div>
+  <div data-role="footer" data-theme="a">
+  <h4>Aplicacion dos, JACO</h4>
+  </div>
+  </div>
+  </div>
+  
+ 
+<div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+  <h1>Religiones que celebran la Semana Santa</h1>
+ </div>
+<div data-role="content" align="center">
+ <div>
+ <h2>Catolicos</h2>
+ <p>
+La Semana Mayor para los católicos es la época en la que se recuerda y celebra los hechos más relevantes en la vida de Jesús de Nazaret (la Pasión, Muerte y Resurrección), comenzando con el llamado Domingo de Ramos y finalizando el Domingo de Resurrección o también llamado de Pascua.
+Tiene lugar después de la Cuaresma, el ciclo de cuarenta días que abarca desde el Miércoles de Ceniza hasta el Jueves Santo. Concretamente, la celebración comienza el domingo de Ramos y finaliza el Sábado Santo, aunque en algunos lugares se adelanta al viernes anterior (el de Dolores) y se prolonga hasta el Domingo de Resurrección.</p></div>
+ </div>
+ <div>
+<center><img src="imagenes/catolica1.jpg" width="25%" height="25%"></center></div>
+<div>
+<center><img src="imagenes/catolica2.jpg" width="25%" height="25%"></center></div>
+ <div>
+ <h2>Cristianos evangélicos</h2>
+ <p>
+Para la iglesia cristiana, la Semana Santa es el tiempo para recordar la muerte de Cristo. Para conmemorarla, se congregan en una jornada de oración y adoración, la cual inicia el Jueves Santo a las 9:00 de la noche y se extiende por 24 horas.</p></div>
+ 
+<div>
+<center><img src="imagenes/cristianose1.jpg" width="25%" height="25%"></center></div>
+<div>
+<center><img src="imagenes/cristianose2.jpg" width="25%" height="25%"></center></div>
+
+<div>
+ <h2>Testigos de Jehová</h2>
+ <p>
+Para los testigos de Jehová la Semana Santa comienza el 14 de abril, o 14 de Nisán, y comprende desde la puesta de sol hasta la próxima.
+
+De acuerdo con su tradición, la única acción que Jesús mandó a conmemorar en esta fecha es la última cena; por esto, la comunidad se reúne en el Salón del Reino para recordar esta acción, reflexionar sobre ella y el significado de la muerte y resurrección de Jesús, como rey mas no como Dios todopoderoso.
+
+En esta ceremonia, al igual que lo hizo Jesús, se reparte el pan y el vino, pero no todos son elegidos de participar de esta cena, pues este honor depende de los méritos de cada persona..</p></div>
+ 
+<div>
+<center><img src="imagenes/testigos1.jpg" width="25%" height="25%"></center></div>
+<div>
+<center><img src="imagenes/testigos2.jpg" width="25%" height="25%"></center></div>
+
+
+<div>
+ <h2>Mormones</h2>
+ <p>
+La Semana Santa de los mormónes inicia desde el Lunes Santo, y como suelen hacer muy habitualmente durante muchas semanas del año, se reúnen en lo que llaman la “noche del hogar” para recordar pasajes de la Biblia protestante y, sobre todo, de sus libros sagrados. Son momentos de estar en familia, de compartir, y recordar cómo Jesús, que era un hombre según ellos, sólo un hombre, se hizo Dios también, otro dios, por sus propias fuerzas y comportamiento, según ellos afirman, y esto mismo es lo que ellos también quieren hacer, convertirse en dioses y regentar el gobierno de algunos sistemas solares del universo.</p></div>
+
+<div>
+<center><img src="imagenes/mormones1.jpg" width="25%" height="25%"></center></div>
+<div>
+<center><img src="imagenes/mormones2.jpg" width="25%" height="25%"></center></div>
+
+
+
+ <div data-role="footer" data-theme="a">
+ <h4>Aplicacion Dos, JACO</h4>
+ </div>
+ </div>
+ </div>
+
+ <div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+ <h1>Semana Santa en Atlixco</h1>
+ </div>
+ <div data-role="content" align="center">
+ <div>
+ <h2> Vía Crucis de Atlixco, en el estado de Puebla, en México, reúne desde hace más de un siglo en Semana Santa a un grupo de penitentes capaces de traspasar el umbral del dolor por su devoción, al salir en procesión encapuchados y descalzos, con grilletes y coronas de espinas. </h2></div>
+ </div>
+
+ <div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Foto Semana Santa 1</h1>
+<div>
+
+<br>
+</div>
+<div>
+<img src="imagenes/atlixco1.jpg" width="25%" height="25%"> </div>
+</div>
+<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image23','','imagenes/tour.png',1)"><img src="imagenes/yo.JPG" width="900" height="473" id="Image23"></a>
+
+ 
+<div data-role="collapsible" data-content-theme="false">
+  <h1>Foto Semana Santa 2 </h1>
+<div>
+
+<br>
+</div>
+<div>
+<img src="imagenes/atlixco2.jpg" width="25%" height="25%"> </div>
+</div>
+
+ 
+<div data-role="collapsible" data-content-theme="false">
+<h1>Foto Semana Santa 3</h1>
+<div>
+
+<br>
+</div>
+<div>
+<img src="imagenes/atlixco3.jpg" width="25%" height="25%"> </div>
+</div>
+
+
+<div data-role="collapsible" data-content-theme="false">
+<h1>Foto Semana Santa 4</h1>
+<div>
+
+<br>
+</div>
+<div>
+<img src="imagenes/atlixco4.jpg" width="25%" height="25%"> </div>
+</div>
+<div data-role="collapsible" data-content-theme="false">
+<h1>Foto Semana Santa 5</h1>
+<div>
+
+<br>
+</div>
+<div>
+<img src="imagenes/atlixco5.jpg" width="25%" height="25%"> </div>
+</div>
+<br>
+</div>
+ <div data-role="footer" data-theme="a">
+ <h4>Aplicacion Uno, JACO</h4>
+ </div>
+
+ </div>
+ <br>
+</div>
+<div data-role="footer" data-theme="a">
+ <h4>Aplicacion Uno, JACO</h4>
+ </div>
+
+
+ 
+
+<div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+ <h1>Estado de Puebla</h1>
+ </div>
+ <div data-role="content" align="center">
+ <div>
+ <h2>La celebración de Semana Santa es para los poblanos una de las conmemoraciones más importantes del año cristiano; durante estos días aquellas personas que profesan alguna de las diferentes confesiones de la fe cristiana acuden a las iglesias más emblemáticas de Puebla para recordar la Pasión, Muerte y Resurrección de Jesús de Nazaret.</h2>
+ <img src="imagenes/puebla.jpg" width="25%" height="25%">
+ </div>
+ </div>
+ <div data-role="footer" data-theme="a">
+ <h4>Aplicacion Uno, JACO</h4>
+ </div>
+ </div>
+ </div>
+
+<div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="a">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+ <h1>Iztalapa </h1>
+ </div>
+ <div data-role="content" align="center">
+ <div>
+ <h2>En Iztapalapa tiene lugar una ceremonia, fiesta y representación de la Pasión, que no responde ni a una narración sacra, ni a un teatro tradicional: es una expresión de múltiples aportaciones que se funde en una particular sincretización.</h2></div>
+ <img src="imagenes/12.jpg" width="50%" height="50%">
+ </div>
+ <div data-role="footer" data-theme="a">
+ <h4>Aplicacion Uno, JACO	</h4>
+ </div>
+ </div>
+ </div>
+ 
+<div data-role="page" id="Pagina6" data-add-back-btn="true" data-theme="a">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+ <h1>San Luis Potosi</h1>
+ </div>
+ <div data-role="content" align="center">
+ <div>
+ <h2>Desde ya casi 60 años, alrededor de dos mil personas de 28 diferentes cofradías (asociaciones de fieles católicos) se reúnen el Viernes Santo para acompañar esta procesión durante la cual portan emblemas, imágenes religiosas referentes al Vía Crucis y visten los colores distintivos de su compañía. Cada una de las “Cofradías” lleva una imagen representativa del Vía Crucis (camino a la cruz) de Jesucristo y de los misterios del Santo Rosario</h2>
+ <img src="imagenes/sanluis.jpg" width="25%" height="25%">
+ </div>
+ </div>
+ <div data-role="footer" data-theme="a">
+ <h4>Aplicacion Uno, JACO</h4>
+ </div>
+ </div>
+ </div>
+ 
+<div data-role="page" id="Pagina7" data-add-back-btn="true" data-theme="a">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+ <h1>Guerrero</h1>
+ </div>
+ <div data-role="content" align="center">
+ <div>
+ <h2>Uno de los atractivos turísticos más importantes que tiene el estado de Guerrero es la celebración de la Semana Santa en Taxco, ceremonia litúrgica conmovedora e impresionante, única en toda la República Mexicana. Parte fundamental en su desarrollo lo constituyen las dramáticas procesiones donde las imágenes religiosas son acompañadas, a lo largo de las empedradas calles de la ciudad, por cofradías de penitentes encapuchados, vestidos de negro y arrastrando cadenas que llevan sujetas a sus tobillos.</h2>
+ <img src="imagenes/gue.jpg" width="25%" height="25%">
+ </div>
+ </div>
+ <div data-role="footer" data-theme="a">
+ <h4>Aplicacion Uno, JACO</h4>
+ </div>
+ </div>
+ </div>
+
+<div data-role="page" id="Pagina8" data-add-back-btn="true" data-theme="a">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+ <h1>Oaxaca</h1>
+ </div>
+ <div data-role="content" align="center">
+ <div>
+ <h2>El Primer Viernes de Cuaresma la Festividad del Señor de Las Misericordias en el Templo de San Juan de Dios, el Segundo Viernes de Cuaresma la Festividad del Señor de Las Maravillas en el Templo de La Defensa , el Cuarto Viernes de Cuaresma la Festividad de la Samaritana en la Ciudad de Oaxaca, el Quinto Viernes de Cuaresma la festividad del Señor de las Peñas en el Templo del Carmen Alto y la Festividad del Señor San Lázaro en la Villa de San Antonino Castillo Velasco.</h2>
+ <div data-role="collapsible" data-content-theme="false">
+<h1>fotografia 5</h1>
+<div>
+
+<br>
+</div>
+<div>
+<img src="imagenes/oaxaca.jpg" width="25%" height="25%"> </div>
+</div>
+ </div>
+ </div>
+ <div data-role="footer" data-theme="a">
+ <h4>Aplicacion Uno, JACO</h4>
+ </div>
+ </div>
+ </div>
+
+ </body>
+ </html>
