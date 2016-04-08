@@ -7,10 +7,10 @@ version = "1.0.0">
 
 <!-- verdionCode is optinal and Android only -->
 
-<name>Aplicacion uno DATOSALUMNOS</name>
+<name>Aplicacion dos, semana santa</name>
 
 <description>
-Aplicacion que muestra los DATOS del alumno
+Semana santa in the mundo 
 </description>
 
 <preference name ="phonegap-version" value="3.1.0" />
